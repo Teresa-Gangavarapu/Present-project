@@ -1,0 +1,45 @@
+.about-me{
+  //  background-color: $color-pink;
+    height: 100vh;
+    position: relative;
+}
+.card{
+    height: 50%;
+    width:80%;
+    background-image: linear-gradient(to left, rgb(79, 43, 223), rgb(68, 29, 223));
+    display: inline-block;
+    margin-left: 20rem;
+    margin-top:10rem;
+    border-radius: 5px;
+    transform: skewX(-12deg);
+    transition:all .3s;
+    &__text{
+        color:white;
+        font-size: 2.5rem;
+        padding:1.5rem;
+        transform: skewX(12deg);
+        transition: all .3s;
+       
+    }
+    &:hover{
+        transform: skewX(12deg);
+    }
+    &:hover &__text{
+        transform: skewX(-12deg);
+    }
+}
+.bg-video{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: .9;
+   overflow:hidden;
+   &__content{
+       height: 100%;
+       width: 100%;
+       object-fit: cover;
+   }
+}

@@ -1,0 +1,67 @@
+.header{
+    background-image: linear-gradient(to right,rgba(pink,.8),rgba(blue,.8)),url(images1/mountains.jpg);
+   
+    height:110vh;
+   
+}
+.home-page{
+    animation-name: moveinleft;
+    animation-duration: 3s;
+    //animation-iteration-count: 3;
+    opacity: 1;
+    &__shape{
+        width : 40rem;
+        height: 40rem;
+       
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        display: inline-block;
+        margin-left: 55rem;
+        margin-top: 10rem;
+        position: relative;
+    }
+    
+    &__image{
+        height: 100%;
+        width: 100%;
+       backface-visibility: hidden;
+       transform: translateX(-4rem) scale(1.2);
+      
+      
+    }
+    &__caption{
+        font-size:3rem;
+        display: inline-block;
+        margin-top:27rem;
+       margin-left:-35rem;
+        color:yellow;
+        position: absolute;
+        opacity: 0;
+        
+        
+
+       
+    }
+    &:hover &__caption{
+        opacity: 1;
+        transform: translateY(-.5rem);
+        font-weight: 800;
+    }
+    &:hover &__image{
+        
+            filter:blur(3px) brightness(80%);
+            z-index:-1;
+       
+    }
+
+}
+@keyframes moveinleft{
+    0%{
+        opacity: .5;
+        transform: translateX(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

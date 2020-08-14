@@ -1,0 +1,27 @@
+.My-projects{
+    height: 60vh;
+    background-image: linear-gradient(to right, rgba(#F4D03F,.8),rgba(#F7DC6F ,.8)),url("images1/Brown1.jpg");
+}
+.card-2{
+    height: 20%;
+    width:20%;
+    border-radius:5px;
+    background-color: #EE2D15;
+    display: inline-block;
+    margin-left:60rem;
+    margin-top:9rem;
+    transition: all .3s;
+    &__link{
+        text-decoration: none;
+        margin-left:4rem;
+        margin-top:5rem;
+        font-size:4rem;
+        color: #E1DB19;
+        
+    }
+    &:hover{
+        outline: 10px solid green;
+        outline-offset: 3rem;
+        transform:scale(1.1);
+    }
+}

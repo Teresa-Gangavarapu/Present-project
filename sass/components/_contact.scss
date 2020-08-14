@@ -1,0 +1,37 @@
+.contact-me{
+    height: 90vh;
+   background-image:url(images1/brown.jpg);
+}
+.card-1{
+    background-color:white;
+    height: 50%;
+    width: 50%;
+    display: inline-block;
+    margin-left:40rem;
+    margin-top:6rem;
+    border-radius: 9px;
+    position: relative;
+    
+    &__list{
+        list-style: none;
+         
+        &--lines{
+            text-decoration: none;
+            text-transform: uppercase;
+           display:inline-block;
+           padding:1rem;
+           font-weight: bold;
+           margin-left:15rem;
+           margin-top:3.5rem;
+           font-size: 2rem;
+           border-radius: 5px;
+           transition: all .3s;
+          &:hover{
+              background-color: brown;
+              transform: skewX(12deg)  scale(1.1);
+              color:yellow;
+          }
+        }
+       
+    }
+}

@@ -1,0 +1,37 @@
+.navigation{
+    background-image:linear-gradient(to right ,#e91b14,rgba(248, 241, 27, 1));
+    height:9vh;
+    width:100vw;
+    z-index: 2000;
+    position: fixed;
+    &__link{
+        margin-top:1rem;
+        &--1{
+            list-style: none;
+            
+            display: inline-block;
+            float: right;
+            margin-right:4rem;
+            margin-top:1rem;
+            font-size: 2rem;
+            transition: all .3s;
+            &:hover{
+                transform: translateX(-2rem);
+            }
+        }
+    }
+}
+.link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 30px;
+    background-image: linear-gradient(to right,$color-blue,$color-pink);
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    
+    
+    
+}
